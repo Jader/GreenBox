@@ -16,5 +16,5 @@ for i in $(seq 1 $1)
 do 
    time=`date +'%G-%m-%d %H:%M:%S' -d '-1 hours'`
    timedatectl set-time "$time"
-   `/bin/bash ./init.sh`
+   `./init.sh`
 done
