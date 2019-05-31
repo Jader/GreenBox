@@ -15,12 +15,12 @@ init(){
 }
 
 execute(){
-	git add .
+	/usr/bin/git add .
 	if [ $? -ne 0 ]; then
 	    exit 1
 	fi
-	git commit -m "Update $TIME"
-	git push
+	/usr/bin/git commit -m "Update $TIME"
+	/usr/bin/git push
 }
 
 init
