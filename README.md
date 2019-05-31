@@ -13,7 +13,7 @@
 
 3、配置 Crontab，这里配置了1小时执行一次，可以自行调整执行频率，项目路径也可以自行调整
 
-    0 * * * * sh /root/GreenBox/init.sh
+    0 * * * * sh /root/GreenBox/init.sh >/dev/null 2>&1
     
 4、push 这步其实就只是验证是否推送正常
     
