@@ -5,6 +5,8 @@
 # @Date        : 2019-05-31 15:47
 # @Author      : Jade
 #
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
 
 init(){
     CURDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd )
