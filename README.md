@@ -15,6 +15,6 @@
 
 4、配置 Crontab，这里配置了1小时执行一次，可以自行调整执行频率，项目路径也可以自行调整。还有需要注意的是 init.sh 需要执行权限
 
-    0 * * * * /root/GreenBox/init.sh >/dev/null 2>&1
+    0 * * * * /bin/bash /root/GreenBox/init.sh >/dev/null 2>&1
     
 5、push 这步其实就只是验证是否推送正常
