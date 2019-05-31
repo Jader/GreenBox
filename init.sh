@@ -10,22 +10,21 @@ export PATH
 
 init(){
     CURDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd )
-	TIME=`date "+%Y-%m-%d %H:%M:%S"`
-	echo $TIME >> $CURDIR/data.log
+    TIME=`date "+%Y-%m-%d %H:%M:%S"`
+    echo $TIME >> $CURDIR/data.log
 }
 
 execute(){
-	/usr/bin/git add .
-	if [ $? -ne 0 ]; then
-	    exit 1
-	fi
-	/usr/bin/git commit -m "Update $TIME"
-	/usr/bin/git push
+    `/usr/bin/git add .`
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
+    `/usr/bin/git commit -m "Update $TIME"`
+    `/usr/bin/git push`
 }
 
 init
 if [ $? -ne 0 ]; then
-    exit 1    
+    exit 1
 fi
 execute
-
