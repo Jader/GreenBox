@@ -17,8 +17,8 @@ execute(){
 	if [ $? -ne 0 ]; then
 	    exit 1
 	fi
-	git commit -m "Update "+$TIME
-	git push -u origin master
+	git commit -m "Update $TIME"
+	git push
 }
 
 init
