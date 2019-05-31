@@ -12,16 +12,16 @@ init(){
     CURDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd )
     TIME=`date "+%Y-%m-%d %H:%M:%S"`
     echo $TIME >> $CURDIR/data.log
-    GIT=`which git`
 }
 
 execute(){
-    $GIT add .
+    cd $CURDIR
+    git add .
     if [ $? -ne 0 ]; then
         exit 1
     fi
-    $GIT commit -m "Update $TIME"
-    $GIT push
+    git commit -m "Update $TIME"
+    git push
 }
 
 init
