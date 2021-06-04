@@ -28,6 +28,6 @@ init
 if [ $? -ne 0 ]; then
     exit 1
 fi
-if [ $(($RANDOM%2)) ]; then
+if [ $(($RANDOM%2)) -gt 0 ]; then
     execute
 fi
