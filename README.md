@@ -31,8 +31,7 @@
     
 ## 效果
 
-![](https://uimg.jadert.com/2019-06-12-15603212015621.jpg?imageView2/0/format/jpg/interlace/1/q/75|watermark/2/text/SmFkZQ==/font/5b6u6L2v6ZuF6buR/fontsize/720/fill/I0U5RThFOA==/dissolve/81/gravity/SouthEast/dx/10/dy/10)
-
+![](https://cdn.jsdelivr.net/gh/jader/resource/images/2021/202203281629220.png)
 
 
  
